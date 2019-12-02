@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "11309916800",
-    "firebase_url": "https://coba-coba-357c2.firebaseio.com",
-    "project_id": "coba-coba-357c2",
-    "storage_bucket": "coba-coba-357c2.appspot.com"
+    "project_number": "296120007259",
+    "firebase_url": "https://tailandtale-38f43.firebaseio.com",
+    "project_id": "tailandtale-38f43",
+    "storage_bucket": "tailandtale-38f43.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:11309916800:android:6140a9e247868fdafafc65",
+        "mobilesdk_app_id": "1:296120007259:android:aa8f63f297d09d335c5d7e",
         "android_client_info": {
           "package_name": "com.tnt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "11309916800-7quu4djmaeglbjjm9h343hqisqa2f8bq.apps.googleusercontent.com",
+          "client_id": "296120007259-5jlhvme8ep7uh3vnr9feia3eg4ar6sg8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD3WHUXaltsLfik7eNc7xH-JN7ZKz5Xrb4"
+          "current_key": "AIzaSyA2WUnodpwANx-F8pmLlCdD29YgMqkm32Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "11309916800-7quu4djmaeglbjjm9h343hqisqa2f8bq.apps.googleusercontent.com",
+              "client_id": "296120007259-5jlhvme8ep7uh3vnr9feia3eg4ar6sg8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

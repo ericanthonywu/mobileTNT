@@ -1,4 +1,7 @@
-#Fri Nov 29 23:13:18 WIB 2019
-base.0=/Users/ericanthonywu/Projects/TNT Mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Mon Dec 02 23:08:57 WIB 2019
+base.0=/Users/ericanthonywu/Projects/TNT Mobile error/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/Users/ericanthonywu/Projects/TNT Mobile/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex

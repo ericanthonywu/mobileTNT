@@ -20,6 +20,8 @@ import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.reactnativecommunity.viewpager.RNCViewPagerPackage;
 // react-native-fbsdk
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
+// react-native-firebase
+import io.invertase.firebase.RNFirebasePackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-reanimated
@@ -74,6 +76,7 @@ public class PackageList {
       new RNGoogleSigninPackage(),
       new RNCViewPagerPackage(),
       new FBSDKPackage(),
+      new RNFirebasePackage(),
       new RNGestureHandlerPackage(),
       new ReanimatedPackage(),
       new VectorIconsPackage()

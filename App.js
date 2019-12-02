@@ -113,7 +113,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
 });
 // console.disableYellowBox = true TODO:Remove on Production
 const IndexNavigator = createStackNavigator({
-    //Login: {screen: Login},
+    Login: {screen: Login},
     Index: {screen: TabNavigator},
 }, {
     headerMode: 'none',
