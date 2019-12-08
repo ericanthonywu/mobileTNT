@@ -19,7 +19,7 @@ class Chat extends React.Component {
                         </TouchableOpacity>
                     </View>
                     <View style={mainStyle.sectionLeft}>
-                        <View style={mainStyle.chatItem}>
+                        <TouchableOpacity onPress={() => this.props.props.navigation.navigate("ChatRoom")} style={mainStyle.chatItem}>
                             <Image source={require("./assets/photodummy.png")} style={mainStyle.chatPhoto}/>
                             <View style={{width:"90%"}}>
                                 <View style={{flexDirection:"row"}}>
@@ -36,81 +36,7 @@ class Chat extends React.Component {
                                 </View>
 
                             </View>
-                        </View>
-                        <View style={mainStyle.chatItem}>
-                            <Image source={require("./assets/photodummy.png")} style={mainStyle.chatPhoto}/>
-                            <View style={{width:"90%"}}>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold", marginRight:5}}>
-                                        Wisnu Wiyantoro
-                                    </Text>
-                                    <Text style={{}}>
-                                        (Veteranian)
-                                    </Text>
-
-                                </View>
-                                <View style={{width:"90%"}}>
-                                    <Text>Text chat chat chat chat chat chat chatchat chat chat chat chat chat </Text>
-                                </View>
-
-                            </View>
-                        </View>
-                        <View style={mainStyle.chatItem}>
-                            <Image source={require("./assets/photodummy.png")} style={mainStyle.chatPhoto}/>
-                            <View style={{width:"90%"}}>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold", marginRight:5}}>
-                                        Wisnu Wiyantoro
-                                    </Text>
-                                    <Text style={{}}>
-                                        (Veteranian)
-                                    </Text>
-
-                                </View>
-                                <View style={{width:"90%"}}>
-                                    <Text>Text chat chat chat chat chat chat chatchat chat chat chat chat chat </Text>
-                                </View>
-
-                            </View>
-                        </View>
-                        <View style={mainStyle.chatItem}>
-                            <Image source={require("./assets/photodummy.png")} style={mainStyle.chatPhoto}/>
-                            <View style={{width:"90%"}}>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold", marginRight:5}}>
-                                        Wisnu Wiyantoro
-                                    </Text>
-                                    <Text style={{}}>
-                                        (Veteranian)
-                                    </Text>
-
-                                </View>
-                                <View style={{width:"90%"}}>
-                                    <Text>Text chat chat chat chat chat chat chatchat chat chat chat chat chat </Text>
-                                </View>
-
-                            </View>
-                        </View>
-                        <View style={mainStyle.chatItem}>
-                            <Image source={require("./assets/photodummy.png")} style={mainStyle.chatPhoto}/>
-                            <View style={{width:"90%"}}>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold", marginRight:5}}>
-                                        Wisnu Wiyantoro
-                                    </Text>
-                                    <Text style={{}}>
-                                        (Veteranian)
-                                    </Text>
-
-                                </View>
-                                <View style={{width:"90%"}}>
-                                    <Text>Text chat chat chat chat chat chat chatchat chat chat chat chat chat </Text>
-                                </View>
-
-                            </View>
-                        </View>
-
-
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>

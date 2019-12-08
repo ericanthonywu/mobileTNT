@@ -1,0 +1,167 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tnt"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:6:5-26:19
+14        android:name="com.tnt.MainApplication"
+14-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:7:7-38
+15        android:allowBackup="false"
+15-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:11:7-34
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.1.0] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/8493cb821e919b4f91642027219d6af6/core-1.1.0/AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:9:7-41
+18        android:label="@string/app_name"
+18-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:8:7-39
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:10:7-52
+20        android:supportsRtl="true"
+20-->[com.facebook.android:facebook-login:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/aac9396e1f0d555824c989793298fc76/jetified-facebook-login-5.11.2/AndroidManifest.xml:28:18-44
+21        android:theme="@style/AppTheme" >
+21-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:12:7-38
+22        <meta-data
+22-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:13:9-14:61
+23            android:name="com.facebook.sdk.ApplicationId"
+23-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:13:20-65
+24            android:value="@string/facebook_app_id" />
+24-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:14:20-59
+25
+26        <activity
+26-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:15:7-24:18
+27            android:name="com.tnt.MainActivity"
+27-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:16:9-37
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+28-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:18:9-79
+29            android:label="@string/app_name"
+29-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:17:9-41
+30            android:windowSoftInputMode="adjustResize" >
+30-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:19:9-51
+31            <intent-filter>
+31-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:20:9-23:25
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:21:13-65
+32-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:21:21-62
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:22:13-73
+34-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:22:23-70
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+37-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:25:7-84
+37-->/Users/ericanthonywu/Projects/TNT Mobile/android/app/src/main/AndroidManifest.xml:25:17-81
+38        <activity
+38-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:29:9-32:66
+39            android:name="com.facebook.FacebookActivity"
+39-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:30:13-57
+40            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+40-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:31:13-96
+41            android:theme="@style/com_facebook_activity_theme" />
+41-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:32:13-63
+42        <activity android:name="com.facebook.CustomTabMainActivity" />
+42-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:33:9-71
+42-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:33:19-68
+43        <activity android:name="com.facebook.CustomTabActivity" />
+43-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:34:9-67
+43-->[com.facebook.android:facebook-common:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/b709e3a567ba1e3865746de3db8cef83/jetified-facebook-common-5.11.2/AndroidManifest.xml:34:19-64
+44        <!--
+45         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+46         with the application context. This config is merged in with the host app's manifest,
+47         but there can only be one provider with the same authority activated at any given
+48         point; so if the end user has two or more different apps that use Facebook SDK, only the
+49         first one will be able to use the provider. To work around this problem, we use the
+50         following placeholder in the authority to identify each host application as if it was
+51         a completely different provider.
+52        -->
+53        <provider
+53-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:39:9-42:40
+54            android:name="com.facebook.internal.FacebookInitProvider"
+54-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:40:13-70
+55            android:authorities="com.tnt.FacebookInitProvider"
+55-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:41:13-72
+56            android:exported="false" />
+56-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:42:13-37
+57
+58        <receiver
+58-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:44:9-50:20
+59            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+59-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:45:13-86
+60            android:exported="false" >
+60-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:46:13-37
+61            <intent-filter>
+61-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:47:13-49:29
+62                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+62-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:48:17-95
+62-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:48:25-92
+63            </intent-filter>
+64        </receiver>
+65        <receiver
+65-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:51:9-58:20
+66            android:name="com.facebook.CampaignTrackingReceiver"
+66-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:52:13-65
+67            android:exported="true"
+67-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:53:13-36
+68            android:permission="android.permission.INSTALL_PACKAGES" >
+68-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:54:13-69
+69            <intent-filter>
+69-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:55:13-57:29
+70                <action android:name="com.android.vending.INSTALL_REFERRER" />
+70-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:56:17-79
+70-->[com.facebook.android:facebook-core:5.11.2] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/832cb9e06f9427a8302acd215f8d69b3/jetified-facebook-core-5.11.2/AndroidManifest.xml:56:25-76
+71            </intent-filter>
+72        </receiver>
+73
+74        <activity
+74-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+75            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+75-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+76            android:excludeFromRecents="true"
+76-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+77            android:exported="false"
+77-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+78            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+78-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+79        <!--
+80            Service handling Google Sign-In user revocation. For apps that do not integrate with
+81            Google Sign-In, this service will never be started.
+82        -->
+83        <service
+83-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+84            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+84-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+85            android:exported="true"
+85-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+86            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+86-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/374a99b295ae206a21c1163ba82afeb3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/5ceb6b5c296223a619078aaf39eac855/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/5ceb6b5c296223a619078aaf39eac855/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/5ceb6b5c296223a619078aaf39eac855/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/5ceb6b5c296223a619078aaf39eac855/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+92
+93        <meta-data
+93-->[com.google.android.gms:play-services-basement:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/3977cc651b90895473bd31021311695b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+94            android:name="com.google.android.gms.version"
+94-->[com.google.android.gms:play-services-basement:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/3977cc651b90895473bd31021311695b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+95            android:value="@integer/google_play_services_version" />
+95-->[com.google.android.gms:play-services-basement:16.0.1] /Users/ericanthonywu/.gradle/caches/transforms-2/files-2.1/3977cc651b90895473bd31021311695b/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+96    </application>
+97
+98</manifest>

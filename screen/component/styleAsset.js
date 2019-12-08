@@ -169,7 +169,7 @@ export const mainStyle = StyleSheet.create({
         alignItems:"center",
         flexDirection:"row",
         marginBottom:20,
-        height:100,
+        height:110,
         backgroundColor:"#fff",
         borderRadius:20,
         borderColor:"#fff",
@@ -209,7 +209,6 @@ export const mainStyle = StyleSheet.create({
         borderBottomLeftRadius:20,
         width: "30%",
         height: 110,
-        marginBottom:10
     },
 
     vetPhoto2:{
@@ -221,7 +220,6 @@ export const mainStyle = StyleSheet.create({
 
     vetContent:{
         marginLeft:20,
-        height:110,
         flexDirection:"column",
         alignItems:"flex-start",
         justifyContent:"flex-start",
@@ -322,6 +320,34 @@ export const mainStyle = StyleSheet.create({
         position:"absolute",
         top:50
     },
+
+    inputContainer:{
+        flexDirection:"row",
+        width:"100%",
+        justifyContent:"flex-start",
+        alignItems:"center"
+    },
+
+    inputContainerColumn:{
+        width:"100%",
+        justifyContent:"flex-start",
+        alignItems:"flex-start",
+        marginTop:50
+    },
+
+    inputTextField:{
+        borderBottomColor:"#e1e1e1",
+        borderBottomWidth:1,
+        width:"70%",
+        marginLeft:30
+    },
+
+    inputTextFieldColumn:{
+        borderBottomColor:"#e1e1e1",
+        borderBottomWidth:1,
+        width:"70%",
+    },
+
 
     searchInput:{
         height: 45,
@@ -445,6 +471,149 @@ export const mainStyle = StyleSheet.create({
         marginRight:20
     },
 
+    chatRoomHeaderContainer:{
+        backgroundColor: "#fff",
+        width:"100%",
+        height:100,
+        flexDirection: "row",
+        justifyContent: "flex-start",
+        alignItems: "flex-end",
+        borderBottomWidth:1,
+        borderBottomColor: "#e1e1e1"
+    },
+
+    chatRoomContact:{
+        flexDirection:"row"
+    },
+
+    chatRoomContactName:{
+        fontSize:20,
+        fontWeight:"bold",
+        marginBottom:10,
+        marginLeft:10
+    },
+
+    chatRoomActor:{
+        fontSize:20,
+        fontWeight:"normal",
+        marginBottom:10,
+        marginLeft:10
+    },
+
+    chatRoomArea:{
+      backgroundColor:"#e1e1e1",
+      width:"100%",
+      height:"100%"
+    },
+
+    bubbleContainerSelf:{
+        alignItems:"flex-end",
+        width:"100%",
+        marginTop:20,
+    },
+
+    bubbleSelf:{
+        borderRadius:20,
+        padding:20,
+        width:"auto",
+        flexDirection:"column",
+        backgroundColor:"#fff",
+        maxWidth:"70%",
+        marginRight:20,
+    },
+
+    bubbleSelfInfo:{
+        marginTop:5,
+        marginRight:20,
+        flexDirection:"row"
+    },
+
+    bubbleTime:{
+        paddingTop:3,
+        paddingRight:5,
+        paddingLeft:5,
+        fontStyle:"italic",
+        color:"grey",
+        fontSize:12
+    },
+
+    bubbleStatus:{
+        paddingTop:3,
+        paddingRight:5,
+        paddingLeft:5,
+        fontStyle:"italic",
+        color:"grey",
+        fontSize:12
+    },
+
+    bubbleContainer:{
+        alignItems:"flex-start",
+        width:"100%",
+        flexDirection:"row",
+        marginTop:20,
+        padding:5
+    },
+
+    bubble:{
+        borderRadius:20,
+        padding:20,
+        width:"auto",
+        flexDirection:"column",
+        backgroundColor:"#ffc8c8",
+        maxWidth:"75%",
+    },
+
+    bubbleInfo:{
+        marginTop:5,
+        marginRight:20,
+        flexDirection:"row"
+    },
+
+    chatRoomContactPhoto:{
+        width:50,
+        height:50,
+        borderRadius:50/2,
+        marginRight:10
+    },
+
+    chatRoomInputContainer:{
+        width:"100%",
+        backgroundColor:"#e1e1e1",
+        flexDirection:"row",
+        height:50,
+        alignItems:"center"
+    },
+
+    chatRoomMenu:{
+        width:"15%",
+        fontSize:100,
+        backgroundColor:"#fff",
+        borderRadius:20,
+        height:40,
+        justifyContent:"center",
+        alignItems:"center",
+        marginLeft:"1%"
+    },
+    chatRoomInput:{
+        width:"60%",
+        backgroundColor:"#fff",
+        height:40,
+        borderRadius:20,
+        paddingRight:10,
+        marginRight:"3%",
+        marginLeft:"3%"
+    },
+
+    chatRoomInputSend:{
+        width:"15%",
+        fontSize:100,
+        backgroundColor:"#fff",
+        borderRadius:20,
+        height:40,
+        justifyContent:"center",
+        alignItems:"center"
+    },
+
     //Headline --
 
     headline1:{
@@ -517,6 +686,26 @@ export const mainStyle = StyleSheet.create({
         borderColor:"#00D6C0",
         borderWidth:1,
         fontSize:15,
+    },
+
+    button5:{
+        justifyContent:"center",
+        alignItems:"center",
+        width:100,
+        height:50,
+        marginTop:50,
+        borderRadius:100,
+        backgroundColor:"#00D6C0",
+        fontSize:30,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+
+        elevation: 3,
     },
 
     buttonCareCTA1:{

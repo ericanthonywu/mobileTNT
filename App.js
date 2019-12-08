@@ -10,10 +10,15 @@ import Profile from './screen/Profile';
 import Chat from './screen/Chat';
 import Consult from './screen/Consult';
 import Care from './screen/Care';
+import EditProfile from './screen/EditProfile';
+import ChatRoom from './screen/ChatRoom';
+import AddPet from './screen/AddPet';
+
 const HomeNavigator = createStackNavigator({
     Index: {screen: Home},
     Chat: {screen: Chat},
-    Consult:{screen: Consult}
+    Consult:{screen: Consult},
+    ChatRoom: {screen: ChatRoom},
 },{
     headerMode: 'none',
     transitionConfig: () => ({
@@ -45,6 +50,7 @@ const HomeNavigator = createStackNavigator({
 const CareNavigator = createStackNavigator({
     Index: {screen: Care},
     Chat: {screen: Chat},
+    ChatRoom: {screen: ChatRoom}
 },{
     headerMode: 'none',
     transitionConfig: () => ({
@@ -73,6 +79,39 @@ const CareNavigator = createStackNavigator({
     })
 });
 
+const ProfileNavigator = createStackNavigator({
+    Index: {screen: Profile},
+    EditProfile: {screen: EditProfile},
+    AddPet: {screen: AddPet}
+},{
+    headerMode: 'none',
+    transitionConfig: () => ({
+        transitionSpec: {
+            duration: 300,
+            easing: Easing.out(Easing.poly(4)),
+            timing: Animated.timing,
+        },
+        screenInterpolator: sceneProps => {
+            const {layout, position, scene} = sceneProps;
+            const {index} = scene;
+
+            const width = layout.initWidth;
+            const translateX = position.interpolate({
+                inputRange: [index - 1, index, index + 1],
+                outputRange: [width, 0, 0],
+            });
+
+            const opacity = position.interpolate({
+                inputRange: [index - 1, index - 0.99, index],
+                outputRange: [0, 1, 1],
+            });
+
+            return {opacity, transform: [{translateX: translateX}]};
+        },
+    })
+});
+
+
 const TabNavigator = createMaterialBottomTabNavigator({
     Home: {
         screen: HomeNavigator,
@@ -97,7 +136,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
     },
 
     Profile: {
-        screen: Profile,
+        screen: ProfileNavigator,
         navigationOptions: {
             tabBarLabel: 'Profile',
             tabBarIcon: ({tintColor}) => (
@@ -113,7 +152,7 @@ const TabNavigator = createMaterialBottomTabNavigator({
 });
 // console.disableYellowBox = true TODO:Remove on Production
 const IndexNavigator = createStackNavigator({
-    Login: {screen: Login},
+    //Login: {screen: Login},
     Index: {screen: TabNavigator},
 }, {
     headerMode: 'none',

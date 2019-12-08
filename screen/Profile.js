@@ -26,10 +26,10 @@ class Profile extends React.Component {
                         <Text style={mainStyle.profMail}>pakwisnu@gmail.com</Text>
                         <Text style={mainStyle.profMail}>Bintaro Sektor IV</Text>
                     <View style={{flexDirection:"row"}}>
-                        <TouchableOpacity style={mainStyle.button3}>
+                        <TouchableOpacity style={mainStyle.button3} onPress={() => this.props.navigation.navigate("EditProfile")}>
                             <Text style={{color:"#fff", fontSize:15, textAlign:"center"}}>Edit Profile</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={mainStyle.button3}>
+                        <TouchableOpacity style={mainStyle.button3} onPress={() => this.props.navigation.navigate("AddPet")}>
                             <Text style={{color:"#fff", fontSize:15, textAlign:"center"}}>Add Pet</Text>
                         </TouchableOpacity>
                     </View>

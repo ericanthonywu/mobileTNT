@@ -186,9 +186,10 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'com.google.firebase:firebase-core:17.2.0'
     implementation 'com.google.firebase:firebase-messaging:20.0.0'
-    implementation (project(':react-native-firebase')) {
+    compile (project(':react-native-firebase')) {
         transitive = false
     }
+    implementation 'me.leolin:ShortcutBadger:1.1.21@aar'
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     if (enableHermes) {

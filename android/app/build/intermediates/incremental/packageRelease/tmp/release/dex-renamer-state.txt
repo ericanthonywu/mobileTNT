@@ -1,0 +1,4 @@
+#Sat Nov 30 18:58:28 WIB 2019
+base.0=/Users/ericanthonywu/Projects/TNT Mobile/android/app/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
